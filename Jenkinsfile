@@ -1,6 +1,8 @@
 pipeline {
     environment {
 	DOTNET_CLI_HOME = '/tmp/dotnet_cli_home'
+	npm_config_cache = 'npm-cache'
+	HOME = '.'
     }
     agent {
         dockerfile true
