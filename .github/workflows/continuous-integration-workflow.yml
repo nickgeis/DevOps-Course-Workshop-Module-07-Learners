@@ -23,5 +23,9 @@ jobs:
     - name: Node test
       run: |
         npm t
+      working-directory: DotnetTemplate.Web
+
+    - name: Node lint test
+      run: |
         npm run lint
       working-directory: DotnetTemplate.Web
