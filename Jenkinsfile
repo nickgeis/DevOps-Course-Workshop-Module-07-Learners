@@ -1,4 +1,7 @@
 pipeline {
+    environment {
+	DOTNET_CLI_HOME = '/tmp/dotnet_cli_home'
+    }
     agent {
         dockerfile true
     }
