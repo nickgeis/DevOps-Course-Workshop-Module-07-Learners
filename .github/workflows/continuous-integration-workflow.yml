@@ -8,9 +8,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2 # Adds a step to checkout the repository code
     - name: Publish to Registry
-      uses: nickgeis/dotnettemplate:latest
-      with:
-        name: nickgeis/dotnettemplate
+         uses: nickgeis/dotnettemplate:latest
+         with:
+           name: nickgeis/dotnettemplate
 
     - name: Build
       run: dotnet build
