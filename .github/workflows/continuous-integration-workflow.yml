@@ -13,28 +13,6 @@ jobs:
           push: true
           tags: nickgeis/dotnettemplate:latest
 
-    - name: Build
-      run: dotnet build
-
-    - name: npm install and build
-      run: |
-        npm install
-        npm run build --if-present
-      working-directory: DotnetTemplate.Web
-
-    - name: Dotnet test
-      run: dotnet test
-
-    - name: Node test
-      run: |
-        npm t
-      working-directory: DotnetTemplate.Web
-
-    - name: Node lint test
-      run: |
-        npm run lint
-      working-directory: DotnetTemplate.Web
-
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@v2
       env:
